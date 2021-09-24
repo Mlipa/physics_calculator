@@ -12,6 +12,7 @@ const calcularPerimetroCuadrado = () => {
   const resultado = PerimetroDelCuadrado(LadoDelCuadrado);
   document.querySelector("#resultado").innerHTML = resultado + " cm";
 };
+
 // Calculo del Circulo
 
 const PerimetroDelCirculo = (radio) => (2*Math.PI*radio).toFixed(3);
@@ -30,6 +31,7 @@ const CalculoPerimetroCirculo = ()=> {
 }
 
 //Calculo del Hexagono
+
 const AreaDelHexagono = (LadoDelHexagono) => (((3*Math.sqrt(3))*Math.pow(LadoDelHexagono,2))/2).toFixed(4);
 const PerimetroDelHexagono= (LadoDelHexagono) => LadoDelHexagono * 6;
 
@@ -44,4 +46,3 @@ const calcularPerimetroHexagono = () => {
   const resultado = PerimetroDelHexagono(LadoDelHexagono);
   document.querySelector("#resultado").innerHTML = resultado + " cm";
 };
-
