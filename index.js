@@ -65,3 +65,22 @@ const calcularPerimetroRectangulo = () => {
   const resultado = PerimetroDelRectangulo(basedelrectangulo,alturadelrectangulo);
   document.querySelector("#resultado-perimetro").innerHTML = resultado + " cm";
 };
+
+// Triangulo
+
+const perimetroDelTriangulo = (ladoDelTriangulo) => ladoDelTriangulo * ladoDelTriangulo * ladoDelTriangulo;
+const areaDelTriangulo = (baseDelTriangulo,alturaDelTriangulo) => (baseDelTriangulo * alturaDelTriangulo)/2;
+
+var calcularAreaTriangulo = () => {
+
+    const baseDelTriangulo = document.querySelector("#base-triangulo").value;
+    const alturaDelTriangulo = document.querySelector("#altura-triangulo").value;
+    const resultado = areaDelTriangulo(baseDelTriangulo,alturaDelTriangulo)
+    document.querySelector("#resultado").innerHTML = resultado
+}
+var calcularPerimetroTriangulo = () => {
+
+    const ladoDelTriangulo = document.querySelector("#lado-triangulo").value;
+    const resultado = perimetroDelTriangulo(ladoDelTriangulo)
+    document.querySelector("#resultado-dos").innerHTML = resultado
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css//style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
+    <title>Calculadora Fisica</title>
+</head>
+<body>
+    <article class="payment-card">
+        <header>
+          <img src="./images/principal.jpg" alt="Calculadora de fisica">
+        </header>
+        <main>
+          <h1> Calculadora de Física</h1>
+          <p> Triangulo</p>
+          <section class="operation-container">
+            <label for="base-triangulo">Base del triangulo</label>
+            <input type="text" id="base-triangulo" placeholder="Base en centimetros">
+            <label for="altura-triangulo">Altura del triangulo</label>
+            <input type="text" id="altura-triangulo" placeholder="Altura en centimetros">
+            <div class="operation-container__resultado">
+                <span>Resultado Area</span>
+                <p id="resultado"></p>
+              </div>
+            <label for="lado-triangulo">Lado del triangulo</label>
+            <input type="text" id="lado-triangulo" placeholder="Lado en centimetros">
+            <div class="operation-container__resultado">
+                <span>Resultado Perimetro</span>
+                <p id="resultado-dos"></p>
+            </div>
+          </section>
+        </main>
+          <section class="buttons">
+            <button class="button" type="button" onclick="calcularAreaTriangulo()" >Calcular el área</button>
+            <button class="button" type="button" onclick="calcularPerimetroTriangulo()">Calcular el perimetro</button>
+            <a href="/" class="button-cancel">Cancelar</a>
+          </section>
+      </article>
+    <script src="./index.js"></script>
+</body>
+</html>
