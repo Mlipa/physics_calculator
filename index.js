@@ -84,3 +84,24 @@ var calcularPerimetroTriangulo = () => {
     const resultado = perimetroDelTriangulo(ladoDelTriangulo)
     document.querySelector("#resultado-dos").innerHTML = resultado
 }
+
+// Romboide
+
+const areaDelRomboide = (baseDelRomboide, alturaDelRomboide) =>
+  baseDelRomboide * alturaDelRomboide;
+const perimetroDelRomboide = (baseDelRomboide, ladoDelRomboide) =>
+  ladoDelRomboide * ladoDelRomboide + baseDelRomboide * baseDelRomboide;
+
+var calcularAreaRomboide = () => {
+  const altDR = document.querySelector("#altura-romboide").value;
+  const baseDR = document.querySelector("#base-romboide").value;
+
+  const resultado = areaDelRomboide(altDR, baseDR);
+  document.querySelector("#resultado").innerHTML = resultado;
+};
+var calcularPerimetroRomboide = () => {
+  const ladoDR = document.querySelector("#lado-romboide").value;
+  const baseDR = document.querySelector("#base-romboide").value;
+  const resultado = perimetroDelRomboide(ladoDR, baseDR);
+  document.querySelector("#resultado").innerHTML = resultado;
+};
