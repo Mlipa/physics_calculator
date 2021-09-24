@@ -46,3 +46,22 @@ const calcularPerimetroHexagono = () => {
   const resultado = PerimetroDelHexagono(LadoDelHexagono);
   document.querySelector("#resultado").innerHTML = resultado + " cm";
 };
+
+//Calculo del Rectangulo
+
+const AreaDelRectangulo = (base,altura) => base*altura;
+const PerimetroDelRectangulo= (base,altura) => 2*base+2*altura;
+
+const calcularAreaRectangulo = () => {
+  const basedelrectangulo = document.querySelector("#base-rectangulo").value;
+  const alturadelrectangulo = document.querySelector("#altura-rectangulo").value;
+  const resultado = AreaDelRectangulo(basedelrectangulo,alturadelrectangulo);
+  document.querySelector("#resultado-area").innerHTML = resultado + " cm";
+};
+
+const calcularPerimetroRectangulo = () => {
+  const basedelrectangulo = document.querySelector("#base-rectangulo").value;
+  const alturadelrectangulo = document.querySelector("#altura-rectangulo").value;
+  const resultado = PerimetroDelRectangulo(basedelrectangulo,alturadelrectangulo);
+  document.querySelector("#resultado-perimetro").innerHTML = resultado + " cm";
+};
