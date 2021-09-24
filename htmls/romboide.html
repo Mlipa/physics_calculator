@@ -17,10 +17,14 @@
         </header>
         <main>
           <h1> Calculadora de Física</h1>
-          <p> Hexagono</p>
+          <p> Romboide</p>
           <section class="operation-container">
-            <label for="lado-Hexagono">Un Lado Del Hexagono</label>
-            <input type="text" id="lado-hexagono" placeholder="Lado en centimetros">
+            <label for="lado-romboide">Lado del romboide</label>
+            <input type="text" id="lado-romboide" placeholder="Lado en centimetros">
+            <label for="altura-romboide">Altura del romboide</label>
+            <input type="text" id="altura-romboide" placeholder="Altura en centimetros">
+            <label for="base-romboide">Base del romboide</label>
+            <input type="text" id="base-romboide" placeholder="Base en centimetros">
             <div class="operation-container__resultado">
               <span>Resultado</span>
               <p id="resultado"></p>
@@ -28,9 +32,9 @@
           </section>
         </main>
           <section class="buttons">
-            <button class="button" type="button" onclick="calcularAreaHexagono()" >Calcular el área</button>
-            <button class="button" type="button" onclick="calcularPerimetroHexagono()">Calcular el perimetro</button>
-            <a href="/" class="button-cancel">Cancelar</a>
+            <button class="button" type="button" onclick="calcularPerimetroRomboide()">Calcular el perimetro</button>
+            <button class="button" type="button" onclick="calcularAreaRomboide()" >Calcular el área</button>
+            <a href="../index.html" class="button-cancel">Cancelar</a>
           </section>
       </article>
     <script src="./index.js"></script>
